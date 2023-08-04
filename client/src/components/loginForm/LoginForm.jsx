@@ -15,7 +15,7 @@ const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here, e.g., send the data to a server or perform authentication logic
+    const postCred = fetch()
     console.log('Email:', email);
     console.log('Password:', password);
   };
