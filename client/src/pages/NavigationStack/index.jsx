@@ -5,7 +5,9 @@ export default function Index (){
     return(
         <Routes>
             {
-                StackedScreen.map((screen,index) => <Route element={screen.component} path={`/${screen.path}`} key={index}/>)
+                StackedScreen.map((screen,index) =>
+                 <Route element={screen.component} path={screen.path === "home" ? '/':`/${screen.path}`} key={index}/>
+                )
             }
         </Routes>
     )
