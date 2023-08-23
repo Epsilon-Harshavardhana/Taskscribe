@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './App.css'
-import Home from './pages/Home'
+import NavigationStack from './pages/NavigationStack'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Home/>
+     <BrowserRouter>
+      <NavigationStack />
+     </BrowserRouter>
     </>
   )
 }

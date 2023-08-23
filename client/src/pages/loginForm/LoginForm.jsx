@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, TextField, Container, Paper, Typography } from '@mui/material';
+import {Link} from 'react-router-dom'
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -47,6 +48,9 @@ const LoginForm = () => {
           <Button type="submit" variant="contained" color="primary" fullWidth>
             Login
           </Button>
+          <Link to="/signup">
+            go to signup
+          </Link>
         </form>
       </Paper>
     </Container>
